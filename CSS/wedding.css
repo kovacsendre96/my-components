@@ -1,0 +1,181 @@
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*=======HEADER STYLE=======*/
+@font-face{
+    src: url(/FONT/GreatVibes-Regular.ttf);
+    font-family: "Great Vibes";
+}
+@font-face{
+    src: url(/FONT/LibreBaskerville-Regular.ttf);
+    font-family: LibreBasker;
+}
+@font-face{
+    src: url(/FONT/Muli.ttf);
+    font-family:Muli;
+}
+
+header{
+    background: url(/IMG/wedding-landing-cover.jpg);
+    background-size: cover;
+    background-position-x: 72%;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: table;
+
+}
+.wrapper-div{
+    display: table-cell;
+    vertical-align: middle;
+  
+}
+.header-div{
+background: hsla(100,0%,0%,.6);
+
+
+
+}
+.tagline{
+    font-family: LibreBasker;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.headlnie{
+    font-family:"Great Vibes";
+    font-size: 60px;
+    color: #d2ba87;
+   padding-top: 15px;
+}
+.date{
+    font-family:LibreBasker ;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.married-line{
+    margin-top:0;
+    width:200px ;
+}
+
+/*======SECTION SETTINGS======*/ 
+
+.white{
+   background: url(/IMG/wedding-landing-background.png) ;
+   
+   color: #444349;
+
+}
+.grey{
+    background:  grey;
+    
+    color: #d2ba87;
+
+    
+
+    
+}
+.section-title{
+    font-family: Great Vibes;
+    font-size: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/*======SECTION#1======*/
+
+
+.sub-head{
+    
+    font-family: LibreBasker;
+    font-weight:bold ;
+    font-size: 20px;
+}
+.location-img{
+    width: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.ceremony,.party,.photos{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.exact-location{
+    font-family: Muli;
+    
+}
+.location-line{
+    width: 25%;
+    border: none;
+    background-color: #444349;
+    height: 2.5px;
+    
+    
+
+  
+}
+
+
+
+
+
