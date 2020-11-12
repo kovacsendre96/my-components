@@ -54,20 +54,20 @@ table {
 
 /*=======HEADER STYLE=======*/
 @font-face{
-    src: url(/FONT/GreatVibes-Regular.ttf);
+    src: url(/my-components/FONT/GreatVibes-Regular.ttf);
     font-family: "Great Vibes";
 }
 @font-face{
-    src: url(/FONT/LibreBaskerville-Regular.ttf);
+    src: url(/my-components/FONT/LibreBaskerville-Regular.ttf);
     font-family: LibreBasker;
 }
 @font-face{
-    src: url(/FONT/Muli.ttf);
+    src: url(/my-components/FONT/Muli.ttf);
     font-family:Muli;
 }
 
 header{
-    background: url(/IMG/wedding-landing-cover.jpg);
+    background: url(/my-components/IMG/wedding-landing-cover.jpg);
     background-size: cover;
     background-position-x: 72%;
     height: 100vh;
@@ -92,7 +92,7 @@ background: hsla(100,0%,0%,.6);
     font-size: 22px;
     color: white;
     letter-spacing: 2px;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 15px;
     
 }
@@ -108,42 +108,52 @@ background: hsla(100,0%,0%,.6);
     font-size: 22px;
     color: white;
     letter-spacing: 2px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     padding-top: 15px;
 }
 .married-line{
     margin-top:0;
     width:200px ;
 }
-
+.date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color:white;
+    height: 1px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left:5px ;
+    margin-right: 5px;
+}
 /*======SECTION SETTINGS======*/ 
+body{
+    background-image: url(/my-components/IMG/wedding-landing-background.png) ;
+}
 
 .white{
-   background: url(/IMG/wedding-landing-background.png) ;
    
    color: #444349;
 
 }
 .grey{
-    background:  grey;
+    background-color:  hsla(100,0%,0%,.6);
     
     color: #d2ba87;
 
-    
-
-    
+       
 }
 .section-title{
     font-family: Great Vibes;
-    font-size: 45px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    font-size: 48px;
+   padding: 40px 10px;
     text-align: center;
+    line-height: 50px;
 }
 
 /*======SECTION#1======*/
-
-
+.locations{
+    padding-bottom:50px ;
+}
 .sub-head{
     
     font-family: LibreBasker;
@@ -169,13 +179,171 @@ background: hsla(100,0%,0%,.6);
     border: none;
     background-color: #444349;
     height: 2.5px;
-    
-    
-
   
+}
+/*======SECTION#2======*/
+.program{
+padding:5px 0 5px 15px;
+}
+.program-tagline{
+    font-style: oblique;
+   
+    margin-bottom: 20px;
+    font-family: Muli;
+    font-size: 20px;
+}
+.program-table{
+    font-size: 20px;
+    font-family: Muli;
+margin-bottom: 25px;
+line-height: 25px;
 }
 
 
+/*======SECTION#3======*/
+
+.gifts{
+    text-align: center;
+    font-family: LibreBasker;
+    line-height: 70px;
+}
+.gifts img{
+    width: 120px;
+}
+.gifts h2{
+    padding-bottom: 0;
+}
+
+/*======SECTION#4======*/
+.questions-and-answers{
+    line-height: 30px;
+    
+    padding-bottom: 20px;
+}
+.qna{
+padding-left: 15px;
+padding-right: 15px;
+}
+.qna h3{
+padding-bottom: 30px;
+padding-top: 20px;
+font-family: LibreBasker;
+font-size: 22px;
+text-align: center;
+}
+.answer{
+    padding-bottom: 25px;
+}
+.question{
+    padding-bottom: 8px;
+    font-weight: bolder;
+}
+.question, .answer{
+    font-family: Muli;
+    font-size: 18px;
+}
+.questions-and-answers h2{
+    padding-bottom: 15px; ;
+}
+.qna-line{
+width: 55%;
+border: none;
+background-color:#d2ba87;
+height: 2.5px;
+}
+.links{
+    text-decoration: none;
+    color:#bd806e;
+}
+.links:hover{
+    transition:.5s ;
+    color:#eda087;
+    
+    
+}
+/*======SECTION#5======*/
+.contact{
+    padding-bottom: 25px;
+    
+}
+.contact p{
+    text-align: center;
+    font-family: LibreBasker;
+    font-size: 19px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right:15px ;
+}
+
+/*======FOOTER======*/
+
+footer{
+    background-color: #444349;
+    height: 9vh;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+footer p{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Muli;
+    color: white;
+    font-size: 14px;
+}
+/*======RESPONSIVE SETTINGS======*/
+@media(min-width:768px){
+
+   .header-div{
+       margin-left: 40vh;  
+       margin-right: 40vh;  
+   }
+   .tagline{
+       text-transform: uppercase;
+    }
+ 
+
+.headlnie{
+    font-size: 110px;
+}
+.location-line{
+    display: none;
+}
+.locations{
+    text-align: center;
+   
+}
+.ceremony, .photos, .party{
+    display: inline-block;
+    margin: 1% 2.5%;
+  
+}
+
+.table-div{
+    margin: 0% 30%; 
+
+}
+
+.qna-line{
+    display: none;
+}
 
 
+.qna-table{
+    display: table;
+    padding-right:20px ;
+    padding-left: 20px;
+    padding-top: 50px;
+    
+  
+}
+.qna{
+    display: table-cell;
+}
+.qna h3{
+    text-align: left;
+}
 
+
+}
